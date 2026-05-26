@@ -25,7 +25,12 @@ function ambilAntrian() {
 
     fetch(GAS_URL, {
         method: 'POST',
-        body: JSON.stringify(payload)
+        headers: {
+            // Memanipulasi header agar tidak memicu CORS Preflight Error
+            'Content-Type': 'text/plain;charset=utf-8', 
+        },
+        body: JSON.stringify(payload),
+        redirect: 'follow' // Wajib agar bisa mengikuti redirect dari server Google
     })
     .then(response => response.json())
     .then(data => {
