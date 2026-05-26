@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambil Antrian - SPMB 2026 SMKN 2 Purwodadi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container-kiosk">
+        <h1>SPMB 2026 SMKN 2 PURWODADI</h1>
+        <h2>Mesin Antrian Verifikasi</h2>
+        
+        <input type="text" id="namaSiswa" placeholder="Masukkan Nama Lengkap">
+        <input type="text" id="noHp" placeholder="Masukkan No. HP Aktif">
+        
+        <button id="btnAmbil" onclick="ambilAntrian()">AMBIL ANTRIAN</button>
+        
+        <div id="hasilAntrian" style="display:none;">
+            <p>Nomor Antrian Anda:</p>
+            <h1 id="nomorCetak">-</h1>
+            <p id="infoLoket">-</p>
+        </div>
+    </div>
+
+    <script src="assets/js/app-siswa.js"></script>
+</body>
+</html>
