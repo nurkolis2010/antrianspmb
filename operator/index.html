@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Operator - Verifikasi SPMB</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="layout-operator">
+        <div class="sidebar">
+            <h3>📋 Antrian Terlewati</h3>
+            <ul id="listDilewati">
+                </ul>
+        </div>
+
+        <div class="main-area">
+            <h2 id="namaOperator">🟢 LOKET OPERATOR</h2>
+            
+            <div class="layar-antrian">
+                <p>SEDANG DILAYANI</p>
+                <h1 id="nomorSaatIni">Menunggu...</h1>
+                <h3 id="namaSaatIni">-</h3>
+                <input type="hidden" id="idAntrianAktif">
+            </div>
+
+            <div class="aksi-tombol">
+                <button class="btn-hijau" onclick="updateStatus('selesai')">✔️ SELESAI</button>
+                <button class="btn-kuning" onclick="updateStatus('dilewati')">⏭️ LEWATI</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/app-operator.js"></script>
+</body>
+</html>
