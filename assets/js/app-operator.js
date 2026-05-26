@@ -1,5 +1,5 @@
 // GANTI DENGAN URL DEPLOY GOOGLE APPS SCRIPT ANDA
-const GAS_URL = 'https://script.google.com/macros/s/AKfycb.../exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbwPCdCnhshiFTy-pcAO2a3b1xTaQb8CiZQ8kiR1pzpb-uquAcGMWEvwwR8kDjonaDCI/exec';
 
 // Fungsi untuk mengambil data terbaru dari Google Sheets
 function fetchDataAntrian() {
